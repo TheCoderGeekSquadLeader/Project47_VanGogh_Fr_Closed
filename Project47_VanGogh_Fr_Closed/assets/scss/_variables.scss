@@ -1,0 +1,31 @@
+// Palette Van Gogh inspirée
+$color-bg: #1B1F3B;       
+$color-accent: #F2C94C;   
+$color-hover: #D96C06;    
+$color-text: #FFFFFF;     
+$color-subtext: #F5F3E7; 
+
+// Typographie
+$font-base: 'Inter', sans-serif;
+$font-title: 'Playfair Display', serif;
+
+// Tailles de police
+$fs-base: 16px;
+$fs-h1: 2rem;
+$fs-h2: 1.5rem;
+$fs-h3: 1.2rem;
+
+// Espacements
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+
+// Breakpoints
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-large: 1440px;
+
+// border-box
+$primary-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+$secondary-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.9);

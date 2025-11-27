@@ -1,0 +1,24 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+   overflow-y: scroll; // permet de scroller
+  scrollbar-width: none; // Firefox
+  -ms-overflow-style: none; // IE & Edge Legacy
+}
+
+body {
+  font-family: $font-base;
+  font-size: $fs-base;
+  background-color: $color-bg;
+  color: $color-text;
+  line-height: 1.6;
+}

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="The Coder Geek Squad Leader" />
+    <meta name="description" content="Présentation mobile-first de Vincent van Gogh, artiste postimpressionniste, avec biographie, œuvres et héritage." />
+    <meta name="keywords" content="html, scss, js, Van Gogh, postimpressionnisme, art, biographie, peintures, mobile-first" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/scss/style.css" />
+    <title>Vincent Van Gogh</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Van Gogh</h1>
+        </div>
+
+        <!-- Icône Remix Icon -->
+        <div class="menu-toggle">
+            <i class="ri-menu-4-line"></i>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="#oeuvres">Œuvres</a></li>
+                <li><a href="#influences">Influences</a></li>
+                <li><a href="#citations">Citations</a></li>
+                <li><a href="#expositions">Expositions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Section d’introduction -->
+        <section id="accueil" class="section accueil">
+            <div class="accueil-top">
+                <h1 class="van-transparent">VAN</h1>
+                <h2 class="vincent">Vincent</h2>
+            </div>
+        
+            <div class="accueil-bottom">
+                <h1 class="gogh-transparent">GOGH</h1>
+                <a href="#biographie" class="btn btn-accent">POSTIMPRESSIONIST</a>
+            </div>
+        </section>
+
+        <!-- Biographie -->
+        <section id="biographie" class="section biographie">
+            <div class="bio-container">
+                <div class="bio-photo">
+                    <img src="assets/img/vangogh1.jpg" alt="Portrait de Van Gogh">
+                </div>
+                <div class="bio-text">
+                    <h2>Biographie</h2>
+                    <p>
+                        Vincent van Gogh, né le 30 mars 1853 à Zundert, aux Pays-Bas, et mort le 29 juillet 1890 à Auvers-sur-Oise, en France, à
+                        l'âge de 37 ans, est un peintre et dessinateur néerlandais. Son œuvre pleine de naturalisme, inspirée par
+                        l'impressionnisme et le pointillisme, annonce le fauvisme et l'expressionnisme.
+                        
+                        Van Gogh grandit au sein d'une famille de l'ancienne bourgeoisie. Il tente d'abord de faire carrière comme marchand
+                        d'art chez Goupil & Cie. Cependant, refusant de voir l'art comme une marchandise, il est licencié. Il aspire alors à
+                        devenir pasteur, mais il échoue aux examens de théologie. À l'approche de 1880, il se tourne vers la peinture. Pendant
+                        ces années, il quitte les Pays-Bas pour la Belgique, puis s'établit en France. Vincent explore la peinture et le dessin
+                        à la fois en autodidacte et en suivant des cours. Passionné, il ne cesse d'enrichir sa culture picturale : il analyse le
+                        travail des peintres de l'époque, il visite les musées et les galeries d'art, il échange des idées avec ses amis
+                        peintres, il étudie notamment les estampes japonaises, les gravures anglaises, etc. Sa peinture reflète ses recherches
+                        et l'étendue de ses connaissances artistiques. Toutefois, sa vie est parsemée de crises qui révèlent son instabilité
+                        mentale. L'une d'elles provoque son suicide, à l'âge de 37 ans.
+                        
+                        L'abondante correspondance de Van Gogh permet de mieux le comprendre. Elle est constituée de plus de 800 lettres écrites
+                        à sa famille et à ses amis, dont 652 envoyées à son frère « Theo », avec qui il entretient une relation soutenue aussi
+                        bien sur le plan personnel que professionnel.
+                        
+                        L'œuvre de van Gogh est composé de plus de 2 000 toiles et dessins datant principalement des années 1880. Il fait écho
+                        au milieu artistique européen de la fin du XIXe siècle. Van Gogh est influencé par ses amis peintres, notamment Anthon
+                        van Rappard, Émile Bernard et Paul Gauguin. Il échange aussi des points de vue avec son frère Theo, un marchand d'art
+                        connu. Il admire Jean-François Millet, Rembrandt, Rubens, Frans Hals, Anton Mauve et Eugène Delacroix, tout en
+                        s'inspirant d'Hiroshige, Claude Monet, Adolphe Monticelli, Paul Cézanne, Edgar Degas et Paul Signac.
+                        
+                        Assez méconnu dans les années 1890, van Gogh n'a été remarqué que par un petit nombre d'auteurs et de peintres en
+                        France, aux Pays-Bas, en Belgique et au Danemark. Cependant, dans les années 1930, ses œuvres attirent 120 000 personnes
+                        à une exposition du Museum of Modern Art, à New York. Il est aujourd'hui considéré comme l'un des plus grands artistes
+                        de tous les temps.
+                    </p>
+                </div>
+                <!-- Cercles décoratifs -->
+                <!-- <div class="circle-large"></div>
+                <div class="circle-small"></div> -->
+            </div>
+        </section>
+
+        <section id="oeuvres" class="section oeuvres">
+            <h2>Œuvres</h2>
+            <div class="oeuvres-grid">
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg.jpg" alt="La Nuit étoilée">
+                    <h3>La Nuit étoilée</h3>
+                    <p>Peinte en 1889, cette œuvre est l’une des plus célèbres de Van Gogh.</p>
+                </div>
+        
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg1.jpg" alt="Les Tournesols">
+                    <h3>Les Tournesols</h3>
+                    <p>Série de peintures réalisées entre 1888 et 1889 à Arles.</p>
+                </div>
+        
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg2.jpg" alt="Le Café de nuit">
+                    <h3>Le Café de nuit</h3>
+                    <p>Tableau vibrant peint en 1888, représentant un café d’Arles.</p>
+                </div>
+
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg3.jpg" alt="La Chambre de Van Gogh à Arles">
+                    <h3>La Chambre de Van Gogh à Arles</h3>
+                    <p>Peinte en 1888–1889, Van Gogh représente sa chambre de la Maison Jaune à Arles, sujet décliné en trois versions.
+                    </p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg4.jpg" alt="Le Semeur">
+                    <h3>Le Semeur</h3>
+                    <p>Motif inspiré de Millet, traité à Arles en 1888, exaltant la lumière du couchant et la figure du paysan au
+                        travail.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg5.jpg" alt="Les Mangeurs de pommes de terre">
+                    <h3>Les Mangeurs de pommes de terre</h3>
+                    <p>Réalisé à Nuenen en 1885, scène sombre de paysans partageant un repas, œuvre clé des débuts de Van Gogh.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg6.jpg" alt="Terrasse du café le soir">
+                    <h3>Terrasse du café le soir</h3>
+                    <p>Septembre 1888, Arles. Première grande scène nocturne, un café illuminé sous un ciel étoilé vibrant.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg7.jpg" alt="Branche d'amandiers en fleurs">
+                    <h3>Branche d'amandiers en fleurs</h3>
+                    <p>Peinte en 1890 à Saint‑Rémy, symbole de renouveau dédié à la naissance de son neveu, influencé par les estampes
+                        japonaises.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg8.jpg" alt="Champs de blé aux corbeaux">
+                    <h3>Champs de blé aux corbeaux</h3>
+                    <p>Juillet 1890, Auvers‑sur‑Oise. Paysage dramatique au ciel tourmenté et corbeaux, souvent associé à ses derniers
+                        mois.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg9.jpg" alt="Le Moulin de la Galette">
+                    <h3>Le Moulin de la Galette</h3>
+                    <p>Vue de Montmartre, Paris 1886. Série consacrée aux moulins et à la vie populaire sur la butte.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg10.jpg" alt="Agostina Segatori au café du Tambourin">
+                    <h3>Agostina Segatori au café du Tambourin</h3>
+                    <p>Portrait réalisé en 1887 à Paris de l’ancienne modèle et patronne du café où il exposa des estampes japonaises.
+                    </p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg11.jpg" alt="Les Alyscamps">
+                    <h3>Les Alyscamps</h3>
+                    <p>Octobre 1888, Arles. Allée automnale d’une nécropole antique, peinte pendant la cohabitation avec Gauguin.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg12.jpg" alt="À la porte de l'éternité">
+                    <h3>À la porte de l'éternité</h3>
+                    <p>Mai 1890, Saint‑Rémy. Vieil homme accablé, reprise d’un motif antérieur, empreinte d’intense émotion.</p>
+                </div>
+
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg14.jpg" alt="Les Arènes d'Arles">
+                    <h3>Les Arènes d'Arles</h3>
+                    <p>1888, Arles. Scène de spectateurs lors d’une corrida locale, avec portraits de proches et amis.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg13.jpg" alt="Arbre fouetté par le vent">
+                    <h3>Arbre fouetté par le vent</h3>
+                    <p>1883, La Haye. Petit paysage au réalisme nerveux capturant la vigueur du vent sur un arbre isolé.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg15.jpg" alt="L'Arlésienne">
+                    <h3>L'Arlésienne (Van Gogh, 1888)</h3>
+                    <p>Portrait de Madame Ginoux à Arles, figure récurrente peinte en plusieurs versions aux couleurs vives.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg16.jpg" alt="Autoportrait à l'oreille bandée">
+                    <h3>Autoportrait à l'oreille bandée</h3>
+                    <p>Janvier 1889, Arles. Van Gogh se représente après l’épisode de l’oreille, devant un chevalet et une estampe
+                        japonaise.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg17.jpg" alt="Autoportrait à l'oreille bandée et à la pipe">
+                    <h3>Autoportrait à l'oreille bandée</h3>
+                    <p>Janvier 1889, Arles. Variante avec pipe, atmosphère plus intime, réalisée peu après la convalescence.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg19.jpg" alt="Autoportrait dédié à Paul Gauguin">
+                    <h3>Autoportrait dédié à Paul Gauguin</h3>
+                    <p>Septembre 1888, Arles. Portrait “bonze” aux tons verts, offert symboliquement à Gauguin avant sa venue.</p>
+                </div>
+
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg18.jpg" alt="Autoportrait avec palette">
+                    <h3>Autoportrait avec palette</h3>
+                    <p>1889, Saint‑Rémy. L’artiste se montre en peintre moderne, palette à la main, palette chromatique complémentaire.
+                    </p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg20.jpg" alt="Branches de marronnier en fleur">
+                    <h3>Branches de marronnier en fleur</h3>
+                    <p>Mai 1890, Auvers‑sur‑Oise. Floraison printanière peinte dans sa dernière période, palette lumineuse et vive.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg22.jpg" alt="Champ de blé à l'alouette">
+                    <h3>Champ de blé à l'alouette</h3>
+                    <p>1887, Paris. Champ foisonnant de fleurs, une alouette s’élève, annonçant son langage de touches rapides.</p>
+                </div>
+
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg21.jpg" alt="La Chaise de Vincent avec sa pipe">
+                    <h3>La Chaise de Vincent avec sa pipe</h3>
+                    <p>1888, Arles. Nature morte symbolique en pendant au fauteuil de Gauguin, lumière diurne et tons jaunes.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg23.jpg" alt="Le Champ de blé aux iris">
+                    <h3>Le Champ de blé aux iris</h3>
+                    <p>Mai 1888, Arles. Prairie jaune aux iris violets, avec la ville au loin, contrastes inspirés du Japonisme.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg24.jpg" alt="Le Champ de blé vert avec cyprès">
+                    <h3>Le Champ de blé vert avec cyprès</h3>
+                    <p>Juin 1889, Saint‑Rémy. Paysage aux cyprès et au blé verdoyant, ciel animé de mouvements tourbillonnants.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg25.jpg" alt="Champs de blé après la pluie">
+                    <h3>Champs de blé après la pluie</h3>
+                    <p>1890, Auvers. Horizons élevés et champs en perspective zigzagante après l’averse, atmosphère apaisée.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg26.jpg" alt="Champs de fleurs en Hollande">
+                    <h3>Champs de fleurs en Hollande</h3>
+                    <p>Vers 1883, La Haye. Rangées colorées de tulipes et parterres fleuris, palette encore réaliste et sobre.</p>
+                </div>
+                  
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg28.jpg" alt="Crabe, couché sur le dos">
+                    <h3>Crabe, couché sur le dos</h3>
+                    <p>1887, Paris. Nature morte concise d’un crabe retourné, influence des estampes japonaises sur le cadrage.</p>
+                </div>
+
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg27.jpg" alt="Champ d'oliviers">
+                    <h3>Champ d'oliviers</h3>
+                    <p>1889, Saint‑Rémy. Série d’oliveraies aux troncs noueux, lumière provençale et spiritualité du motif.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg29.jpg" alt="La Cueillette des olives">
+                    <h3>La Cueillette des olives</h3>
+                    <p>Fin 1889, Saint‑Rémy. Plusieurs versions de femmes récoltant les olives, stylisation et gamme discrète.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg30.jpg" alt="Les Cyprès">
+                    <h3>Les Cyprès</h3>
+                    <p>1889, Saint‑Rémy. Arbres sombres dressés comme des obélisques, traités en série, symbole fort chez Van Gogh.</p>
+                </div>
+
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg32.jpg" alt="Le Fauteuil de Paul Gauguin">
+                    <h3>Le Fauteuil de Paul Gauguin</h3>
+                    <p>Novembre 1888, Arles. Pendant de la chaise de Vincent, nocturne rouge‑vert, bougie et romans sur l’assise.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg31.jpg" alt="La Diligence de Tarascon">
+                    <h3>La Diligence de Tarascon</h3>
+                    <p>Octobre 1888, Arles. Voiture dans la cour d’une auberge, clin d’œil littéraire à Daudet et Tartarin.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg34.jpg" alt="Iris">
+                    <h3>Iris</h3>
+                    <p>Mai 1889, Saint‑Rémy. Étude de couleur où les iris violets contrastent avec des fonds jaunes et verts.</p>
+                </div>
+     
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg33.jpg" alt="La Fête du 14 juillet à Paris">
+                    <h3>La Fête du 14 juillet à Paris</h3>
+                    <p>1886, Paris. Rue pavoisée et foule en mouvement, témoignage de son immersion dans la vie parisienne.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg35.jpg" alt="La moisson">
+                    <h3>La moisson</h3>
+                    <p>1888, Arles. Champs découpés, faucheurs à l’ouvrage, composition horizontale d’une Provence lumineuse.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg36.webp" alt="Nuit étoilée sur le Rhône">
+                    <h3>Nuit étoilée sur le Rhône</h3>
+                    <p>Septembre 1888, Arles. Reflets des lumières de la ville sur le fleuve, ciel nocturne constellé.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg37.jpg" alt="Vue des toits de Paris">
+                    <h3>Vue des toits de Paris</h3>
+                    <p>1886–1887, Paris. Panorama depuis Montmartre, cheminées et monuments à l’horizon, perspective profonde.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg38.jpg" alt="Usines à Asnières">
+                    <h3>Usines à Asnières</h3>
+                    <p>Été 1887, région parisienne. Cheminées fumantes et bords de Seine, regard sur l’industrialisation.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg39.jpg" alt="Rue d'Auvers">
+                    <h3>Rue d'Auvers</h3>
+                    <p>Mai 1890, Auvers‑sur‑Oise. Maisons et rues du village de ses dernières semaines, palette vive et dense.</p>
+                </div>
+                
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg40.jpg" alt="La Ronde des prisonniers">
+                    <h3>La Ronde des prisonniers</h3>
+                    <p>Février 1890, Saint‑Rémy. Prisonniers tournant en cour, réinterprétation d’un motif de Doré, écho de
+                        l’enfermement.</p>
+                </div>
+
+                <div class="oeuvre-card">
+                    <img src="assets/img/bg41.jpg" alt="Les Ponts d'Asnières">
+                    <h3>Les Ponts d'Asnières</h3>
+                    <p>Peinte en 1887 à Asnières-sur-Seine, cette toile montre les ponts franchissant la Seine.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="influences" class="section influences">
+            <h2>Influences</h2>
+            <p class="intro">
+                Van Gogh a été marqué par plusieurs courants artistiques et cultures qui ont façonné son style unique.
+                Voici quelques influences majeures qui transparaissent dans ses œuvres.
+            </p>
+            <div class="influences-grid">
+                <article class="influence-card">
+                    <h3>Impressionnisme</h3>
+                    <p>Mouvement pictural né en France dans les années 1860, l’impressionnisme cherche à saisir les effets fugitifs de
+                        la lumière et de la couleur. Van Gogh s’en inspire à Paris (1886–1888), notamment par l’usage de touches rapides
+                        et de couleurs vibrantes.</p>
+                </article>
+                
+                <article class="influence-card">
+                    <h3>Postimpressionnisme</h3>
+                    <p>Le postimpressionnisme désigne les styles développés après l’impressionnisme, entre la fin des années 1880 et
+                        1910. Van Gogh en est une figure majeure, aux côtés de Cézanne, Gauguin et Toulouse-Lautrec, cherchant à
+                        dépasser l’impressionnisme par une expression plus subjective et symbolique.</p>
+                </article>
+                
+                <article class="influence-card">
+                    <h3>Expressionnisme</h3>
+                    <p>Courant artistique apparu au début du XXe siècle en Allemagne, l’expressionnisme déforme la réalité pour susciter
+                        une réaction émotionnelle intense. Van Gogh est considéré comme un précurseur par son usage dramatique de la
+                        couleur et de la forme, influençant des artistes comme Munch et Kirchner.</p>
+                </article>
+                
+                <article class="influence-card">
+                    <h3>Fauvisme</h3>
+                    <p>Né en France vers 1905, le fauvisme se caractérise par l’usage de couleurs pures et vives, cloisonnées par des
+                        contours marqués. Les fauves, dont Matisse et Derain, ont repris les recherches impressionnistes et
+                        postimpressionnistes, en particulier celles de Van Gogh sur la couleur expressive.</p>
+                </article>
+                
+                <article class="influence-card">
+                    <h3>Symbolisme</h3>
+                    <p>Le symbolisme, mouvement artistique européen des années 1870–1890, privilégie le rêve, l’ésotérisme et la
+                        mélancolie. Van Gogh, bien que non symboliste, partage avec eux une recherche de sens intérieur et une intensité
+                        émotionnelle dans ses paysages et autoportraits.</p>
+                </article>
+                
+                <article class="influence-card">
+                    <h3>Figuration contemporaine</h3>
+                    <p>La figuration contemporaine, héritière de la figuration narrative et de la nouvelle figuration des années 1960,
+                        marque un retour à la représentation dans un contexte dominé par l’abstraction. Elle explore des thèmes sociaux
+                        et politiques, et prolonge l’héritage figuratif de Van Gogh dans l’art actuel.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="citations" class="section citations">
+            <h2>Citations</h2>
+            <p class="intro">
+                Les citations et pensées associées à Van Gogh reflètent une vision singulière de l’art, de la vie et de la condition
+                humaine.
+            </p>
+        
+            <div class="citations-grid">
+                <blockquote class="citation-card">
+                    <p>"Je mets mon cœur et mon âme dans mon travail, et j’ai perdu mon esprit en cours de route."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je ressens qu’il n’y a rien de plus réellement artistique que d’aimer les gens."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Les grandes choses ne se font pas par la force, mais par une série de petites choses réunies."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Ce que serait la vie si nous n’avions pas le courage de tenter quoi que ce soit."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je veux exprimer avec la couleur quelque chose de la force de la vie."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je ne sais rien avec certitude, mais la vue des étoiles me fait rêver."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je veux peindre des paysages qui expriment des états d’âme."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je veux que mes œuvres disent : cet homme sent profondément."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je cherche toujours quelque chose de plus que la simple apparence, je veux exprimer l’essence."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je veux peindre des portraits qui soient plus que des ressemblances, qui soient des révélations."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je veux peindre des choses qui me touchent profondément, et qui touchent aussi les autres."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je veux peindre des paysages où l’on sent la vie qui palpite."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je veux peindre la lumière qui jaillit du cœur des hommes."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+
+                <blockquote class="citation-card">
+                    <p>"Je sens qu’il y a quelque chose de plus grand que moi, et je veux l’exprimer par la peinture."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je veux peindre des portraits qui soient des fenêtres ouvertes sur l’âme."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+                
+                <blockquote class="citation-card">
+                    <p>"Je veux peindre des paysages qui soient comme des poèmes de couleurs."</p>
+                    <span class="author">Vincent van Gogh</span>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="expositions" class="section expositions">
+            <h2>Expositions</h2>
+            <p class="intro">
+                Les œuvres de Van Gogh continuent de voyager et d’inspirer. Ses tableaux sont exposés dans des musées
+                prestigieux
+                et lors d’expositions temporaires qui attirent des millions de visiteurs chaque année.
+            </p>
+        
+            <div class="expositions-grid">
+                <article class="expo-card">
+                    <img src="assets/img/th.jpg" alt="Musée d'Orsay, Paris">
+                    <h3>Musée d'Orsay, Paris</h3>
+                    <p>Présente des chefs‑d’œuvre impressionnistes et postimpressionnistes, dont plusieurs toiles de Van Gogh.</p>
+                    <span class="date">Depuis 1986</span>
+                </article>
+                
+                <article class="expo-card">
+                    <img src="assets/img/th2.jpg" alt="Van Gogh Museum, Amsterdam">
+                    <h3>Van Gogh Museum, Amsterdam</h3>
+                    <p>La plus vaste collection de Van Gogh, avec <em>Les Tournesols</em> et <em>La Chambre à Arles</em>.</p>
+                    <span class="date">Ouvert en 1973</span>
+                </article>
+                
+                <article class="expo-card">
+                    <img src="assets/img/th3.jpg" alt="MoMA, New York">
+                    <h3>Museum of Modern Art, New York</h3>
+                    <p><em>La Nuit étoilée</em> y est exposée, icône mondiale de l’art moderne.</p>
+                    <span class="date">Depuis 1941</span>
+                </article>
+
+                <article class="expo-card">
+                    <img src="assets/img/th4.jpg" alt="Musée Kröller-Müller, Otterlo">
+                    <h3>Musée Kröller-Müller, Otterlo</h3>
+                    <p>Deuxième plus grande collection de Van Gogh, avec plus de 90 peintures.</p>
+                    <span class="date">Depuis 1938</span>
+                </article>
+                
+                <article class="expo-card">
+                    <img src="assets/img/th5.jpg" alt="Musée de l'Ermitage, Saint-Pétersbourg">
+                    <h3>Musée de l'Ermitage, Saint-Pétersbourg</h3>
+                    <p>Quelques œuvres de Van Gogh sont exposées dans ses collections européennes.</p>
+                    <span class="date">Fondé en 1764</span>
+                </article>
+                
+                <article class="expo-card">
+                    <img src="assets/img/th6.jpg" alt="Musée Rodin, Paris">
+                    <h3>Musée Rodin, Paris</h3>
+                    <p>Présente parfois Van Gogh dans ses expositions temporaires.</p>
+                    <span class="date">Ouvert en 1919</span>
+                </article>
+                
+                <article class="expo-card">
+                    <img src="assets/img/th8.jpg" alt="National Gallery, Londres">
+                    <h3>National Gallery, Londres</h3>
+                    <p>Exhibe <em>Les Tournesols</em> et d’autres chefs-d’œuvre de Van Gogh.</p>
+                    <span class="date">Depuis 1824</span>
+                </article>
+                
+                <article class="expo-card">
+                    <img src="assets/img/th9.jpg" alt="Musée des Beaux-Arts Pouchkine, Moscou">
+                    <h3>Musée des Beaux-Arts Pouchkine, Moscou</h3>
+                    <p>Possède quelques toiles de Van Gogh dans sa collection impressionniste.</p>
+                    <span class="date">Depuis 1912</span>
+                </article>
+                
+                <article class="expo-card">
+                    <img src="assets/img/th10.jpg" alt="Neue Pinakothek, Munich">
+                    <h3>Neue Pinakothek, Munich</h3>
+                    <p>Expose des œuvres majeures de Van Gogh et des postimpressionnistes.</p>
+                    <span class="date">Depuis 1853</span>
+                </article>
+                
+                <article class="expo-card">
+                    <img src="assets/img/th11.jpg" alt="Maison de Van Gogh à Drenthe">
+                    <h3>Maison de Van Gogh à Drenthe</h3>
+                    <p>Lieu où Van Gogh vécut en 1883, aujourd’hui musée commémoratif.</p>
+                    <span class="date">Maison historique</span>
+                </article>
+                
+                <article class="expo-card">
+                    <img src="assets/img/th12.jpg" alt="Maison Van Gogh à Cuesmes">
+                    <h3>Maison Van Gogh à Cuesmes</h3>
+                    <p>Maison belge où il résida en 1879, transformée en espace muséal.</p>
+                    <span class="date">Maison historique</span>
+                </article>
+                
+                <article class="expo-card">
+                    <img src="assets/img/th13.jpg" alt="Monastère Saint-Paul-de-Mausole, Saint-Rémy">
+                    <h3>Monastère Saint-Paul-de-Mausole, Saint-Rémy</h3>
+                    <p>Lieu de son internement en 1889, où il peignit les <em>Irises</em>.</p>
+                    <span class="date">Depuis le Moyen Âge</span>
+                </article>
+                
+                <article class="expo-card">
+                    <img src="assets/img/th14.jpg" alt="Maison du Docteur Gachet, Auvers-sur-Oise">
+                    <h3>Maison du Docteur Gachet, Auvers-sur-Oise</h3>
+                    <p>Lieu de ses derniers mois, immortalisé dans plusieurs toiles.</p>
+                    <span class="date">Maison historique</span>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="footer__container">
+    
+            <!-- À propos -->
+            <div class="footer__about">
+                <h3>Vincent van Gogh</h3>
+                <p>
+                    Peintre post-impressionniste dont les œuvres vibrantes et expressives
+                    continuent d’inspirer le monde entier.
+                </p>
+            </div>
+    
+            <!-- Liens rapides -->
+            <div class="footer__links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#biographie">Biographie</a></li>
+                    <li><a href="#oeuvres">Œuvres</a></li>
+                    <li><a href="#influences">Influences</a></li>
+                    <li><a href="#citations">Citations</a></li>
+                    <li><a href="#expositions">Expositions</a></li>
+                    <li><a href="blog/index.html">MyBlog</a></li>
+                </ul>
+            </div>
+    
+            <!-- Réseaux sociaux -->
+            <div class="footer__socials">
+                <h4>Suivez-moi</h4>
+                <div class="footer__icons">
+                    <a href="#" rel="noopener noreferrer"><i class="ri-github-fill"></i></a>
+                    <a href="#" rel="noopener noreferrer"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#" rel="noopener noreferrer"><i class="ri-twitter-x-line"></i></a>
+                    <a href="#" rel="noopener noreferrer"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- Bas du footer -->
+        <div class="footer__bottom">
+            <p>&copy; 2025 Van Gogh Tous droits réservés. By The Coder Geek Squad Leader.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>  
+</body>
+</html>

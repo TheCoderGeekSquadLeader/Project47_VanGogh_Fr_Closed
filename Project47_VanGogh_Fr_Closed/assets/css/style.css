@@ -1,0 +1,125 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  background-color: #1B1F3B;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #F2C94C;
+  text-decoration: none;
+}
+a:hover {
+  color: #D96C06;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #1B1F3B;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 1000;
+  box-sizing: border-box;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.9);
+}
+.header .logo h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8rem;
+  color: #F2C94C;
+  white-space: nowrap;
+  line-height: 1;
+  margin-top: 1rem;
+  margin-left: 0.2rem;
+}
+.header .menu-toggle {
+  font-size: 1.1rem;
+  margin-top: 0.1rem;
+  color: #F2C94C;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  margin-right: 0.3rem;
+}
+.header .menu-toggle .ri-menu-4-line {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.header .menu-toggle .ri-close-fill {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #F2C94C;
+  transform: rotate(180deg);
+  font-size: 1.3rem;
+}
+.header .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: #1B1F3B;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.header .nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.header .nav.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .header .menu-toggle {
+    display: none;
+  }
+  .header .nav {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    padding: 0;
+    display: block;
+  }
+  .header .nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
